@@ -1,18 +1,14 @@
 using Harmony;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
-using UnityEngine;
 
 namespace com.blargs.raft.pause
 {
     [ModTitle("PauseMod")]
-    [ModDescription("Allows the game to be paused in multiplayer.")]
+    [ModDescription("Allows the player to pause their thirst & hunger in multiplayer.")]
     [ModAuthor("Echo343")]
     [ModIconUrl("https://www.raftmodding.com/images/missing.jpg")]
     [ModWallpaperUrl("https://www.raftmodding.com/images/missing.jpg")]
-    [ModVersion("0.0.1")]
+    [ModVersion("1.0.0")]
     [RaftVersion("Update 9 (3556813)")]
     public class PauseMod : Mod
     {

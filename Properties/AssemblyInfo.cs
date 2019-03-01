@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 
 [assembly: AssemblyVersion("0.0.0.1")]
-[assembly: AssemblyTitle("PauseMod Mod")]
+[assembly: AssemblyTitle("PauseMod")]
 [assembly: AssemblyDescription("This assembly is a Mod for RaftModLoader wich can be downloaded at https://www.raftmodding.com")]
 [assembly: AssemblyCompany("HyTeKGames")]
 [assembly: AssemblyProduct("RaftModLoader Mod")]

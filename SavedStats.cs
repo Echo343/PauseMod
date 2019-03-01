@@ -1,13 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace com.blargs.raft.pause
 {
     class SavedStats
     {
         private static Dictionary<String, SavedStats> INSTANCE = new Dictionary<string, SavedStats>();
+
+        public static SavedStats GetSavedPlayerStats(String playerName)
+        {
+            if (!INSTANCE.TryGetValue(playerName, out SavedStats stats))
+            {
+                stats = new SavedStats();
+                INSTANCE.Add(playerName, stats);
+            }
+            return stats;
+        }
 
         public float Thirst
         {
@@ -25,19 +33,9 @@ namespace com.blargs.raft.pause
             set;
         }
 
-        public SavedStats()
+        private SavedStats()
         {
             IsPaused = false;
-        }
-
-        public static SavedStats GetSavedPlayerStats(String playerName)
-        {
-            if (!INSTANCE.TryGetValue(playerName, out SavedStats stats))
-            {
-                stats = new SavedStats();
-                INSTANCE.Add(playerName, stats);
-            }
-            return stats;
         }
     }
 }
