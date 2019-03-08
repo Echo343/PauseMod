@@ -4,11 +4,11 @@ using System.Reflection;
 namespace com.blargs.raft.pause
 {
     [ModTitle("PauseMod")]
-    [ModDescription("Allows the player to pause their thirst & hunger in multiplayer.")]
+    [ModDescription("Allows the player to pause their thirst & hunger in multiplayer. Icon made by Lucy G <https://www.flaticon.com/authors/lucy-g> from https://www.flaticon.com/ is licensed by http://creativecommons.org/licenses/by/3.0/")]
     [ModAuthor("Echo343")]
-    [ModIconUrl("https://www.raftmodding.com/images/missing.jpg")]
-    [ModWallpaperUrl("https://www.raftmodding.com/images/missing.jpg")]
-    [ModVersion("1.0.0")]
+    [ModIconUrl("https://i.imgur.com/hztBVwU.png")]
+    [ModWallpaperUrl("https://i.imgur.com/uUvbe7D.png")]
+    [ModVersion("1.1.0")]
     [RaftVersion("Update 9 Hotfix 3")]
     public class PauseMod : Mod
     {
