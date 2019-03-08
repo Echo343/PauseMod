@@ -9,20 +9,27 @@ namespace com.blargs.raft.pause
     [ModIconUrl("https://www.raftmodding.com/images/missing.jpg")]
     [ModWallpaperUrl("https://www.raftmodding.com/images/missing.jpg")]
     [ModVersion("1.0.0")]
-    [RaftVersion("Update 9 (3556813)")]
+    [RaftVersion("Update 9 Hotfix 3")]
     public class PauseMod : Mod
     {
+        private Network_Player player = null;
+        private const string harmonyId = "com.blargs.raft.pause";
+        private HarmonyInstance harmony = null;
+
         private void Start()
         {
-            var harmony = HarmonyInstance.Create("com.blargs.raft.pause");
+            harmony = HarmonyInstance.Create(harmonyId);
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             RConsole.Log("PauseMod loaded!");
         }
 
         public void Update()
         {
-            Network_Player player = RAPI.getLocalPlayer();
-            if (player != null)
+            if (player == null)
+            {
+                player = RAPI.getLocalPlayer();
+            }
+            else
             {
                 SavedStats stats = SavedStats.GetSavedPlayerStats(player.name);
                 if (stats.IsPaused)
@@ -36,6 +43,7 @@ namespace com.blargs.raft.pause
         public void OnModUnload()
         {
             RConsole.Log("PauseMod has been unloaded!");
+            harmony.UnpatchAll(harmonyId);
             Destroy(gameObject);
         }
     }
