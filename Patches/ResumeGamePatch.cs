@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 
 namespace com.blargs.raft.pause.Patches
@@ -12,7 +12,7 @@ namespace com.blargs.raft.pause.Patches
         {
             if (menuType == MenuType.PauseMenu)
             {
-                Network_Player player = RAPI.getLocalPlayer();
+                Network_Player player = RAPI.GetLocalPlayer();
                 if (player != null)
                 {
                     SavedStats.GetSavedPlayerStats(player.name).IsPaused = false;
