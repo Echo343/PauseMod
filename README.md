@@ -1,5 +1,57 @@
-# PauseMod
-## Description
-A mod for the game "Raft". This mod allows the player to pause their hunger & thirst in a multiplayer game without pausing the world for the rest of the players.
 
-Simply press escape to bring up the pause menu and you will notice your hunger and thirst will stop dropping.  Caution, you can still die by other means.  Don't be upset if the shark ate the floor you were standing on. :-P
+
+<div align = right>
+
+<img
+    src = 'Source/icon.png'
+    align = right
+    width = 120
+/>
+
+</div>
+
+# PauseMod   [![Badge License]][License]
+
+*A **[Raft]** mod to pause player stats in multiplayer.*
+
+
+<br>
+<br>
+<br>
+
+<div align = center>
+
+[![Button RaftModding]][RaftModding]
+
+</div>
+
+<br>
+<br>
+
+## Features
+
+Pauses your personal hunger / thirst stats from dropping <br>
+while you are in multiplayer and the  <kbd>  ESC  </kbd>  menu.
+
+*This of course means that you can still die while in the pause* <br>
+*menu or the shark could eat the floor you are standing.*
+
+<br>
+
+
+<!----------------------------------------------------------------------------->
+
+[RaftModding]: https://www.raftmodding.com/mods/pausemod
+[Raft]: https://raft-game.com/
+
+[License]: LICENSE
+
+
+<!----------------------------------[ Badges ]--------------------------------->
+
+[Badge License]: https://img.shields.io/badge/License-AGPL3-015d93.svg?style=for-the-badge&labelColor=blue
+
+
+<!---------------------------------[ Buttons ]--------------------------------->
+
+[Button RaftModding]: https://img.shields.io/badge/RaftModding-3498db?style=for-the-badge&logoColor=white&logo=Wireshark
